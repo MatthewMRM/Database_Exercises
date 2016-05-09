@@ -11,10 +11,10 @@ WHERE gender = 'M'
 	OR first_name = 'Vidya'
 	OR first_name = 'Maya');
 
-SELECT last_name
+SELECT CONCAT(first_name, ' ', last_name) 
 FROM employees
-WHERE last_name LIKE 'E%'
-	OR last_name LIKE '%E';
+WHERE first_name LIKE 'E%'
+	AND last_name LIKE '%E';
 
 SELECT emp_no, first_name, last_name
 FROM employees
