@@ -1,2 +1,6 @@
 SELECT DISTINCT title
 FROM titles;
+
+SELECT DISTINCT title
+FROM titles
+GROUP BY title ASC;
