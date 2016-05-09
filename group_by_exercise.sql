@@ -1,5 +1,2 @@
-USE DISTINCT;
-
-Select titles
-FROM titles
-GROUP BY titles;
+SELECT DISTINCT title
+FROM titles;
