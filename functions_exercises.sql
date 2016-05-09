@@ -16,10 +16,17 @@ FROM employees
 WHERE first_name LIKE 'E%'
 	AND last_name LIKE '%E';
 
+
+SELECT DATEDIFF(hire_date, curdate());
+FROM employees
+WHERE hire_date LIKE '199%-%-%';
+	AND curdate();	
+
 SELECT emp_no, first_name, last_name
 FROM employees
 WHERE birth_date LIKE '%-12-25';
 	AND hire_date LIKE '199%-%-%';
+	
 
 SELECT first_name, last_name
 FROM employees
