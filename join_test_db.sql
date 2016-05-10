@@ -1,4 +1,4 @@
-USE join_test_db;
+use join_test_db;
 
 CREATE TABLE roles (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
